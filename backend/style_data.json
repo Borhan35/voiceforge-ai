@@ -1,0 +1,960 @@
+{
+    "Minsang": [
+        "Conversational",
+        "Audiobook"
+    ],
+    "Jeongseob": [
+        "Conversational",
+        "Documentary"
+    ],
+    "Mark": [
+        "Announcer",
+        "News",
+        "Ads"
+    ],
+    "Jaehun": [
+        "Conversational",
+        "E-learning"
+    ],
+    "Sujin": [
+        "Conversational",
+        "Podcast"
+    ],
+    "Sangdo": [
+        "Documentary",
+        "Audiobook"
+    ],
+    "GeumHee": [
+        "Conversational",
+        "Audiobook"
+    ],
+    "Jinhyuk": [
+        "Announcer",
+        "News"
+    ],
+    "Younghee": [
+        "E-learning",
+        "Documentary"
+    ],
+    "Jicheol": [
+        "Announcer",
+        "Documentary"
+    ],
+    "Myeonghee": [
+        "Conversational",
+        "Podcast"
+    ],
+    "Santa Reporter": [
+        "Announcer",
+        "Funny"
+    ],
+    "Sunggyu": [
+        "Conversational",
+        "Audiobook"
+    ],
+    "Camila": [
+        "Conversational",
+        "Podcast"
+    ],
+    "Jennifer": [
+        "Announcer",
+        "News",
+        "Ads"
+    ],
+    "Old radio": [
+        "Documentary",
+        "Audiobook"
+    ],
+    "Glenda": [
+        "Conversational",
+        "Audiobook"
+    ],
+    "Uncle Hank": [
+        "Conversational",
+        "Audiobook"
+    ],
+    "Icarus": [
+        "Documentary",
+        "Audiobook"
+    ],
+    "Jimmy": [
+        "Conversational",
+        "Podcast"
+    ],
+    "Reporter Catalina": [
+        "News",
+        "Announcer"
+    ],
+    "Newscaster John": [
+        "News",
+        "Announcer"
+    ],
+    "Duke": [
+        "Documentary",
+        "Audiobook"
+    ],
+    "Doughnut": [
+        "Funny",
+        "Conversational"
+    ],
+    "Nana": [
+        "Conversational",
+        "Podcast"
+    ],
+    "Xavier": [
+        "Announcer",
+        "Documentary",
+        "Ads"
+    ],
+    "Margaret": [
+        "Audiobook",
+        "Documentary"
+    ],
+    "Liam": [
+        "Conversational",
+        "Podcast"
+    ],
+    "George": [
+        "Audiobook",
+        "Documentary"
+    ],
+    "Annie": [
+        "Conversational",
+        "E-learning"
+    ],
+    "David": [
+        "Announcer",
+        "News",
+        "Ads"
+    ],
+    "Jack": [
+        "Conversational",
+        "Podcast"
+    ],
+    "Noeul": [
+        "Conversational",
+        "Podcast"
+    ],
+    "Furnando": [
+        "Audiobook",
+        "Documentary"
+    ],
+    "Keybo": [
+        "Funny",
+        "Game"
+    ],
+    "Sindarin": [
+        "Audiobook",
+        "Documentary"
+    ],
+    "Kevin": [
+        "Conversational",
+        "Podcast"
+    ],
+    "Youngkyu": [
+        "Announcer",
+        "News"
+    ],
+    "JaeYi": [
+        "Conversational",
+        "E-learning"
+    ],
+    "Vanessa": [
+        "Conversational",
+        "Podcast"
+    ],
+    "Romi": [
+        "Anime",
+        "Conversational"
+    ],
+    "Robo": [
+        "Robot",
+        "Game"
+    ],
+    "Dan": [
+        "Conversational",
+        "Podcast"
+    ],
+    "Vivien": [
+        "Audiobook",
+        "Documentary"
+    ],
+    "Hana": [
+        "Conversational",
+        "E-learning"
+    ],
+    "Viqqie": [
+        "Conversational",
+        "Podcast"
+    ],
+    "Santa": [
+        "Funny",
+        "Audiobook"
+    ],
+    "Slushy": [
+        "Funny",
+        "Game"
+    ],
+    "Rudolph": [
+        "Funny",
+        "Audiobook"
+    ],
+    "Dollar Jr.": [
+        "Funny",
+        "Conversational"
+    ],
+    "Peter": [
+        "Conversational",
+        "E-learning"
+    ],
+    "Michael": [
+        "Announcer",
+        "Documentary",
+        "Ads"
+    ],
+    "Carlos": [
+        "Conversational",
+        "Podcast",
+        "Rapper"
+    ],
+    "Emma": [
+        "Conversational",
+        "Audiobook"
+    ],
+    "Ryan": [
+        "Conversational",
+        "Podcast",
+        "Rapper"
+    ],
+    "Katie": [
+        "Conversational",
+        "E-learning"
+    ],
+    "Aiden": [
+        "Conversational",
+        "Podcast"
+    ],
+    "Lala": [
+        "Anime",
+        "Conversational"
+    ],
+    "Noa": [
+        "Conversational",
+        "Podcast",
+        "Rapper"
+    ],
+    "Vincent": [
+        "Audiobook",
+        "Documentary"
+    ],
+    "Helena": [
+        "Audiobook",
+        "Documentary"
+    ],
+    "Oscar": [
+        "Announcer",
+        "News",
+        "Ads"
+    ],
+    "Matthew": [
+        "Conversational",
+        "Podcast"
+    ],
+    "Angela": [
+        "E-learning",
+        "Documentary"
+    ],
+    "Hans": [
+        "Documentary",
+        "Audiobook"
+    ],
+    "Edward": [
+        "Audiobook",
+        "Documentary"
+    ],
+    "Neoguard": [
+        "Robot",
+        "Game"
+    ],
+    "Alex": [
+        "Conversational",
+        "Podcast"
+    ],
+    "Kelly": [
+        "Conversational",
+        "Podcast"
+    ],
+    "P-0150N": [
+        "Robot",
+        "Game"
+    ],
+    "Claire": [
+        "Conversational",
+        "E-learning",
+        "Voicemail"
+    ],
+    "Sara": [
+        "Conversational",
+        "Podcast",
+        "Voicemail"
+    ],
+    "Sophia": [
+        "Audiobook",
+        "Documentary"
+    ],
+    "Tyson": [
+        "Announcer",
+        "Documentary",
+        "Ads",
+        "Shouting"
+    ],
+    "Olivia": [
+        "Conversational",
+        "Podcast",
+        "Voicemail"
+    ],
+    "Joshua": [
+        "Conversational",
+        "E-learning"
+    ],
+    "Samantha": [
+        "Conversational",
+        "Podcast",
+        "Voicemail"
+    ],
+    "Tim": [
+        "Conversational",
+        "Podcast"
+    ],
+    "Cyrus": [
+        "Audiobook",
+        "Documentary"
+    ],
+    "Mia": [
+        "Conversational",
+        "E-learning"
+    ],
+    "Owen": [
+        "Conversational",
+        "Podcast"
+    ],
+    "Stephanie": [
+        "Conversational",
+        "Podcast",
+        "Voicemail"
+    ],
+    "Leo": [
+        "Conversational",
+        "Podcast"
+    ],
+    "Ella": [
+        "Conversational",
+        "E-learning"
+    ],
+    "Agatha": [
+        "Audiobook",
+        "Documentary"
+    ],
+    "Rachel": [
+        "Conversational",
+        "Podcast",
+        "Voicemail"
+    ],
+    "Sean": [
+        "Conversational",
+        "Podcast"
+    ],
+    "MBTI IT (F)": [
+        "Conversational",
+        "E-learning"
+    ],
+    "MBTI IF (M)": [
+        "Conversational",
+        "E-learning"
+    ],
+    "MBTI EF (M)": [
+        "Conversational",
+        "Podcast"
+    ],
+    "Rebecca": [
+        "Audiobook",
+        "Documentary"
+    ],
+    "Rex": [
+        "Announcer",
+        "Documentary",
+        "Ads",
+        "Shouting"
+    ],
+    "West": [
+        "Audiobook",
+        "Documentary"
+    ],
+    "Lindsay": [
+        "Conversational",
+        "Podcast"
+    ],
+    "Dana": [
+        "Conversational",
+        "Podcast",
+        "Voicemail"
+    ],
+    "Ben": [
+        "Conversational",
+        "Podcast"
+    ],
+    "Justin": [
+        "Conversational",
+        "E-learning"
+    ],
+    "Tina": [
+        "Conversational",
+        "Podcast",
+        "Voicemail"
+    ],
+    "Henry": [
+        "Audiobook",
+        "Documentary"
+    ],
+    "Killian the Vampire": [
+        "Scary",
+        "Audiobook"
+    ],
+    "Sabrina the Witch": [
+        "Scary",
+        "Audiobook"
+    ],
+    "Frankenstein": [
+        "Scary",
+        "Funny"
+    ],
+    "Jack-o'-Lantern": [
+        "Scary",
+        "Funny"
+    ],
+    "Annabelle the Ghost": [
+        "Scary",
+        "Audiobook"
+    ],
+    "Millie": [
+        "Conversational",
+        "E-learning"
+    ],
+    "Philip": [
+        "Announcer",
+        "Documentary"
+    ],
+    "Abigail": [
+        "Conversational",
+        "Podcast"
+    ],
+    "Athena": [
+        "Audiobook",
+        "Documentary"
+    ],
+    "Patrick": [
+        "Conversational",
+        "Podcast"
+    ],
+    "Jodie": [
+        "Conversational",
+        "Podcast"
+    ],
+    "Mrs. Claus": [
+        "Funny",
+        "Audiobook"
+    ],
+    "Santa Claus": [
+        "Funny",
+        "Audiobook"
+    ],
+    "K-Santa": [
+        "Funny",
+        "Audiobook"
+    ],
+    "Bell": [
+        "Conversational",
+        "E-learning",
+        "Voicemail"
+    ],
+    "Noel": [
+        "Conversational",
+        "Audiobook"
+    ],
+    "Buddy": [
+        "Funny",
+        "Conversational"
+    ],
+    "Liz": [
+        "Conversational",
+        "Podcast"
+    ],
+    "Charlotte": [
+        "Audiobook",
+        "Documentary"
+    ],
+    "Graham": [
+        "Announcer",
+        "Documentary",
+        "Ads"
+    ],
+    "Cole": [
+        "Conversational",
+        "Podcast"
+    ],
+    "April": [
+        "Conversational",
+        "E-learning",
+        "Voicemail"
+    ],
+    "Jin": [
+        "Conversational",
+        "Podcast"
+    ],
+    "Maddie": [
+        "Conversational",
+        "E-learning",
+        "Tiktok/Reels"
+    ],
+    "Neel": [
+        "Conversational",
+        "Podcast"
+    ],
+    "Lydia": [
+        "Audiobook",
+        "Documentary"
+    ],
+    "Brad": [
+        "Announcer",
+        "News",
+        "Ads"
+    ],
+    "Catherine": [
+        "Audiobook",
+        "Documentary"
+    ],
+    "Natalie": [
+        "Conversational",
+        "Podcast"
+    ],
+    "Klip Kim": [
+        "Funny",
+        "Conversational"
+    ],
+    "Nathan": [
+        "Conversational",
+        "Podcast"
+    ],
+    "Caitlyn": [
+        "Conversational",
+        "E-learning"
+    ],
+    "Jenna": [
+        "Conversational",
+        "Podcast",
+        "Tiktok/Reels"
+    ],
+    "Amber": [
+        "Conversational",
+        "Podcast",
+        "Tiktok/Reels"
+    ],
+    "Jake": [
+        "Conversational",
+        "Podcast",
+        "Rapper"
+    ],
+    "River": [
+        "Conversational",
+        "Audiobook",
+        "Rapper"
+    ],
+    "Eman": [
+        "Announcer",
+        "Documentary",
+        "Shouting"
+    ],
+    "Maisie": [
+        "Conversational",
+        "E-learning"
+    ],
+    "Billie": [
+        "Conversational",
+        "Podcast",
+        "Tiktok/Reels"
+    ],
+    "Shinwook": [
+        "Announcer",
+        "Documentary",
+        "Shouting"
+    ],
+    "Yubin": [
+        "Conversational",
+        "Podcast"
+    ],
+    "Seonha": [
+        "Conversational",
+        "E-learning"
+    ],
+    "Geunyeong": [
+        "Conversational",
+        "Documentary"
+    ],
+    "Geunhyeok": [
+        "Announcer",
+        "Documentary"
+    ],
+    "Captain Bill": [
+        "Audiobook",
+        "Documentary"
+    ],
+    "Norah": [
+        "Conversational",
+        "Podcast"
+    ],
+    "Rita": [
+        "Conversational",
+        "Podcast"
+    ],
+    "Lloyd": [
+        "Audiobook",
+        "Documentary"
+    ],
+    "Avery": [
+        "Conversational",
+        "E-learning"
+    ],
+    "Simon": [
+        "Conversational",
+        "Podcast"
+    ],
+    "Callan": [
+        "Conversational",
+        "Podcast",
+        "Rapper"
+    ],
+    "Royce": [
+        "Announcer",
+        "Documentary",
+        "Shouting"
+    ],
+    "Larry": [
+        "Conversational",
+        "Podcast"
+    ],
+    "Miran Choi": [
+        "Announcer",
+        "News"
+    ],
+    "Chester": [
+        "Audiobook",
+        "Documentary"
+    ],
+    "Patricia": [
+        "Audiobook",
+        "Documentary"
+    ],
+    "Bongman Kim": [
+        "Funny",
+        "Conversational"
+    ],
+    "Chunsik Kang": [
+        "Funny",
+        "Conversational"
+    ],
+    "Ron": [
+        "Conversational",
+        "Podcast"
+    ],
+    "Carol": [
+        "Conversational",
+        "E-learning"
+    ],
+    "Kristen": [
+        "Conversational",
+        "Podcast"
+    ],
+    "Landon": [
+        "Conversational",
+        "Podcast"
+    ],
+    "Yunbin": [
+        "Conversational",
+        "E-learning"
+    ],
+    "Chloe": [
+        "Conversational",
+        "Podcast",
+        "Tiktok/Reels"
+    ],
+    "Robert": [
+        "Announcer",
+        "Documentary",
+        "Shouting"
+    ],
+    "Starling": [
+        "Audiobook",
+        "Documentary"
+    ],
+    "Dylan": [
+        "Conversational",
+        "Podcast",
+        "Rapper"
+    ],
+    "Bruce": [
+        "Announcer",
+        "Documentary",
+        "Shouting"
+    ],
+    "Youngji": [
+        "Conversational",
+        "Podcast"
+    ],
+    "Monggun": [
+        "Conversational",
+        "Documentary"
+    ],
+    "Hyun": [
+        "Conversational",
+        "E-learning"
+    ],
+    "Jaekyung": [
+        "Conversational",
+        "Podcast"
+    ],
+    "Chase": [
+        "Conversational",
+        "Podcast",
+        "Rapper"
+    ],
+    "Harper": [
+        "Conversational",
+        "E-learning"
+    ],
+    "Shana": [
+        "Conversational",
+        "Podcast"
+    ],
+    "Dean": [
+        "Announcer",
+        "Documentary",
+        "Shouting"
+    ],
+    "Yuri": [
+        "Conversational",
+        "Podcast"
+    ],
+    "Jinhan": [
+        "Conversational",
+        "E-learning"
+    ],
+    "Hwimin": [
+        "Conversational",
+        "Podcast"
+    ],
+    "Ravi": [
+        "Conversational",
+        "Podcast"
+    ],
+    "Lucille": [
+        "Audiobook",
+        "Documentary"
+    ],
+    "Jeff": [
+        "Conversational",
+        "Podcast"
+    ],
+    "Skylar": [
+        "Conversational",
+        "Podcast",
+        "Tiktok/Reels"
+    ],
+    "Chungah": [
+        "Conversational",
+        "E-learning"
+    ],
+    "Oliver": [
+        "Conversational",
+        "Podcast"
+    ],
+    "Grace": [
+        "Audiobook",
+        "E-learning"
+    ],
+    "Kelsey": [
+        "Conversational",
+        "Podcast",
+        "Tiktok/Reels"
+    ],
+    "Paige": [
+        "Conversational",
+        "E-learning"
+    ],
+    "Tian": [
+        "Audiobook",
+        "Documentary"
+    ],
+    "Ael": [
+        "Anime",
+        "Conversational"
+    ],
+    "Babilon": [
+        "Deep",
+        "Audiobook"
+    ],
+    "Carl": [
+        "Conversational",
+        "Podcast"
+    ],
+    "Victoria": [
+        "Audiobook",
+        "Documentary"
+    ],
+    "Miso": [
+        "Conversational",
+        "E-learning"
+    ],
+    "Hugh": [
+        "Audiobook",
+        "Documentary"
+    ],
+    "Hailey": [
+        "Conversational",
+        "Podcast"
+    ],
+    "Viktor": [
+        "Announcer",
+        "Documentary",
+        "Shouting"
+    ],
+    "Benny": [
+        "Funny",
+        "Conversational"
+    ],
+    "Seungjae": [
+        "Conversational",
+        "E-learning"
+    ],
+    "Logan": [
+        "Conversational",
+        "Podcast",
+        "Rapper"
+    ],
+    "Jackson": [
+        "Conversational",
+        "Podcast"
+    ],
+    "Margot": [
+        "Audiobook",
+        "Documentary"
+    ],
+    "Rowoon": [
+        "Conversational",
+        "Podcast"
+    ],
+    "Dabin": [
+        "Conversational",
+        "E-learning"
+    ],
+    "Damian": [
+        "Announcer",
+        "Documentary",
+        "Shouting"
+    ],
+    "Aaron": [
+        "Conversational",
+        "Podcast",
+        "Rapper"
+    ],
+    "Rusty": [
+        "Funny",
+        "Conversational"
+    ],
+    "Gus": [
+        "Conversational",
+        "Podcast"
+    ],
+    "Valerie": [
+        "Audiobook",
+        "Documentary"
+    ],
+    "Chad": [
+        "Conversational",
+        "Podcast"
+    ],
+    "Sylvia": [
+        "Audiobook",
+        "Documentary"
+    ],
+    "Kanno": [
+        "Anime",
+        "Game"
+    ],
+    "Zoey": [
+        "Conversational",
+        "E-learning",
+        "Tiktok/Reels"
+    ],
+    "Verna": [
+        "Audiobook",
+        "Documentary"
+    ],
+    "Riley": [
+        "Conversational",
+        "Podcast",
+        "Tiktok/Reels"
+    ],
+    "Elias": [
+        "Audiobook",
+        "Documentary"
+    ],
+    "Nova": [
+        "Conversational",
+        "E-learning",
+        "Tiktok/Reels"
+    ],
+    "Audrey": [
+        "Audiobook",
+        "Documentary"
+    ],
+    "Doug": [
+        "Conversational",
+        "Podcast"
+    ],
+    "Janet": [
+        "Audiobook",
+        "Documentary"
+    ],
+    "Echo": [
+        "Robot",
+        "Game"
+    ],
+    "Tessa": [
+        "Conversational",
+        "Podcast"
+    ],
+    "Walter": [
+        "Audiobook",
+        "Documentary"
+    ],
+    "Nia": [
+        "Conversational",
+        "E-learning"
+    ],
+    "Wade": [
+        "Conversational",
+        "Podcast"
+    ],
+    "Elise": [
+        "Audiobook",
+        "Documentary"
+    ],
+    "Anja": [
+        "Conversational",
+        "Podcast"
+    ],
+    "Alena": [
+        "Conversational",
+        "E-learning"
+    ]
+}

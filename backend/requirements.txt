@@ -1,0 +1,5 @@
+fastapi
+uvicorn
+typecast-python
+python-multipart
+python-dotenv
