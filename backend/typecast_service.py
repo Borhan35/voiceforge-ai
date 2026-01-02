@@ -133,7 +133,7 @@ class TypecastService:
         import concurrent.futures
 
         try:
-            client = self._get_client(api_key)
+            # client = self._get_client(api_key) # Do not share client across threads
             
             chunks = self._split_text(text)
             print(f"Processing text in {len(chunks)} chunks (Total length: {len(text)})")
@@ -158,7 +158,11 @@ class TypecastService:
             def process_chunk(index, chunk):
                 print(f"Generating chunk {index+1}/{len(chunks)} (len: {len(chunk)})")
                 try:
-                    res = client.text_to_speech(TTSRequest(
+                    # Instantiate a NEW client for each thread/request to ensure thread safety
+                    # The Typecast client might not be thread-safe regarding requests session
+                    local_client = self._get_client(api_key)
+                    
+                    res = local_client.text_to_speech(TTSRequest(
                         text=chunk,
                         model=model,
                         voice_id=voice_id,
@@ -171,7 +175,8 @@ class TypecastService:
                     raise
 
             # Execute similarly to Promise.all in JS
-            with concurrent.futures.ThreadPoolExecutor(max_workers=5) as executor:
+            # Reduced max_workers to 3 to be safer against rate limits and server load
+            with concurrent.futures.ThreadPoolExecutor(max_workers=3) as executor:
                 # Submit all tasks
                 future_to_chunk = {executor.submit(process_chunk, i, chunk): i for i, chunk in enumerate(chunks)}
                 
