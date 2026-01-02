@@ -9,6 +9,7 @@ import { ApiKeyModal } from './components/ApiKeyModal';
 import { GeneratedHistory } from './components/GeneratedHistory';
 import { Sparkles, Settings, History } from 'lucide-react';
 import logoImg from './assets/logo.png';
+import { storage } from './utils/storage';
 
 import { config } from './config';
 
@@ -30,10 +31,14 @@ function App() {
   const [audioUrl, setAudioUrl] = useState<string | null>(null);
 
   // Generated History State
-  const [generatedHistory, setGeneratedHistory] = useState<GeneratedAudio[]>(() => {
-    const saved = localStorage.getItem('generated_history');
-    return saved ? JSON.parse(saved) : [];
-  });
+  const [generatedHistory, setGeneratedHistory] = useState<GeneratedAudio[]>([]);
+
+  // Load history on mount
+  useEffect(() => {
+    storage.getHistory().then(history => {
+      setGeneratedHistory(history);
+    });
+  }, []);
   const [showHistoryPanel, setShowHistoryPanel] = useState(false);
   const [currentPlayingHistoryId, setCurrentPlayingHistoryId] = useState<string | null>(null);
 
@@ -380,10 +385,8 @@ function App() {
         timestamp: Date.now()
       };
 
-      setGeneratedHistory(prev => {
-        const newHistory = [historyItem, ...prev].slice(0, 20); // Keep max 20 items
-        localStorage.setItem('generated_history', JSON.stringify(newHistory));
-        return newHistory;
+      storage.addHistoryItem(historyItem).then(newHistory => {
+        setGeneratedHistory(newHistory);
       });
 
     } catch (error) {
@@ -469,16 +472,15 @@ function App() {
 
   // History Handlers
   const handleDeleteFromHistory = (id: string) => {
-    setGeneratedHistory(prev => {
-      const newHistory = prev.filter(item => item.id !== id);
-      localStorage.setItem('generated_history', JSON.stringify(newHistory));
-      return newHistory;
+    storage.deleteHistoryItem(id).then(newHistory => {
+      setGeneratedHistory(newHistory);
     });
   };
 
   const handleClearHistory = () => {
-    setGeneratedHistory([]);
-    localStorage.removeItem('generated_history');
+    storage.clearHistory().then(() => {
+      setGeneratedHistory([]);
+    });
   };
 
   const handleHistoryPlay = (item: GeneratedAudio) => {
