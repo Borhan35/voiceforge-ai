@@ -1,5 +1,5 @@
 import { forwardRef } from 'react';
-import { Send, Loader2, BookOpen, Mic2, Tv, Film } from 'lucide-react';
+import { Send, Loader2, BookOpen, Mic2, Tv, Film, Type, Coins } from 'lucide-react';
 import type { Voice } from '../types';
 
 interface TextInputProps {
@@ -103,14 +103,20 @@ export const TextInput = forwardRef<HTMLTextAreaElement, TextInputProps>(({ text
                 </div>
             )}
 
-            {/* Character Counter */}
+            {/* Character Counter & Credit Estimate */}
             {text.length > 0 && (
-                <div className="absolute bottom-4 left-4 md:bottom-1 md:left-1 z-20 pointer-events-none animate-fade-in">
-                    <span className="text-xs font-medium text-[var(--text-secondary)] bg-[var(--bg-surface-light)]/80 px-2 py-1 rounded-md backdrop-blur-sm border border-[var(--border-subtle)] shadow-sm">
-                        {text.length} characters
-                    </span>
+                <div className="absolute bottom-4 left-4 md:bottom-2 md:left-2 z-20 pointer-events-none animate-fade-in flex items-center gap-4 text-xs font-medium text-[var(--text-tertiary)]">
+                    <div className="flex items-center gap-1.5 bg-[var(--bg-surface-light)]/50 px-2 py-1 rounded-full backdrop-blur-[2px]">
+                        <Type size={12} className="text-[var(--text-secondary)]" />
+                        <span>{text.length}</span>
+                    </div>
+                    <div className="flex items-center gap-1.5 bg-[var(--bg-surface-light)]/50 px-2 py-1 rounded-full backdrop-blur-[2px]">
+                        <Coins size={12} className="text-amber-400" />
+                        <span>~{text.length * 2}</span>
+                    </div>
                 </div>
             )}
+
         </div>
     );
 });

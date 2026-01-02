@@ -297,7 +297,15 @@ def generate_speech(request: GenerateRequest, x_api_key: Optional[str] = Header(
             
         return response_data
     except Exception as e:
-        raise HTTPException(status_code=500, detail=str(e))
+        # Check if it's a quota/payment issue
+        error_msg = str(e)
+        status_code = 500
+        if "QUOTA_INSUFFICIENT" in error_msg or "Payment required" in error_msg:
+             status_code = 402 # Payment Required
+        elif "Validation error" in error_msg:
+             status_code = 400 # Bad Request
+             
+        raise HTTPException(status_code=status_code, detail=error_msg)
 
 
 @app.post("/analyze-emotion", response_model=EmotionAnalyzeResponse)

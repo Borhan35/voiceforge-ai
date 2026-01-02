@@ -1,0 +1,6 @@
+Testing generation with text length: 10000 characters
+Using voice_id: tc_5c3c52ca5827e00008dd7f38
+Processing text in 7 chunks (Total length: 10000)
+Generating chunk 1/7 (len: 1499)
+Error generating speech: Payment required: {"error_code":"QUOTA_INSUFFICIENT","message":"Payment required"}
+Failed! Error: Payment required: {"error_code":"QUOTA_INSUFFICIENT","message":"Payment required"}
