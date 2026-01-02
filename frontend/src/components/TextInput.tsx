@@ -102,6 +102,15 @@ export const TextInput = forwardRef<HTMLTextAreaElement, TextInputProps>(({ text
                     </button>
                 </div>
             )}
+
+            {/* Character Counter */}
+            {text.length > 0 && (
+                <div className="absolute bottom-4 left-4 md:bottom-1 md:left-1 z-20 pointer-events-none animate-fade-in">
+                    <span className="text-xs font-medium text-[var(--text-secondary)] bg-[var(--bg-surface-light)]/80 px-2 py-1 rounded-md backdrop-blur-sm border border-[var(--border-subtle)] shadow-sm">
+                        {text.length} characters
+                    </span>
+                </div>
+            )}
         </div>
     );
 });
