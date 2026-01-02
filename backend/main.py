@@ -15,7 +15,11 @@ app = FastAPI(title="VoiceForge AI Backend")
 # CORS middleware
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],  # For development
+    allow_origins=[
+        "http://localhost:5173",
+        "https://voiceforge-ai-psi.vercel.app",
+        "https://voiceforge-backend.onrender.com"
+    ],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],

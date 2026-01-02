@@ -130,13 +130,16 @@ class TypecastService:
             audio_format: Output format ("wav" or "mp3")
             seed: Random seed for reproducibility
         """
+        import concurrent.futures
+
         try:
             client = self._get_client(api_key)
             
             chunks = self._split_text(text)
             print(f"Processing text in {len(chunks)} chunks (Total length: {len(text)})")
             
-            audio_segments = []
+            # Prepare segments array to preserve order
+            audio_segments = [None] * len(chunks)
             total_duration = 0.0
             
             prompt = Prompt(
@@ -151,18 +154,36 @@ class TypecastService:
                 volume=volume
             )
             
-            for i, chunk in enumerate(chunks):
-                print(f"Generating chunk {i+1}/{len(chunks)} (len: {len(chunk)})")
-                response = client.text_to_speech(TTSRequest(
-                    text=chunk,
-                    model=model,
-                    voice_id=voice_id,
-                    prompt=prompt,
-                    output=output_config
-                ))
-                audio_segments.append(response.audio_data)
-                total_duration += float(response.duration)
-            
+            # Helper function for parallel execution
+            def process_chunk(index, chunk):
+                print(f"Generating chunk {index+1}/{len(chunks)} (len: {len(chunk)})")
+                try:
+                    res = client.text_to_speech(TTSRequest(
+                        text=chunk,
+                        model=model,
+                        voice_id=voice_id,
+                        prompt=prompt,
+                        output=output_config
+                    ))
+                    return index, res.audio_data, float(res.duration)
+                except Exception as e:
+                    print(f"Error generating chunk {index+1}: {e}")
+                    raise
+
+            # Execute similarly to Promise.all in JS
+            with concurrent.futures.ThreadPoolExecutor(max_workers=5) as executor:
+                # Submit all tasks
+                future_to_chunk = {executor.submit(process_chunk, i, chunk): i for i, chunk in enumerate(chunks)}
+                
+                for future in concurrent.futures.as_completed(future_to_chunk):
+                    try:
+                        idx, data, duration = future.result()
+                        audio_segments[idx] = data
+                        total_duration += duration
+                    except Exception as e:
+                         # If one chunk fails, likely all will fail or the result is invalid
+                        raise e
+
             if len(audio_segments) == 1:
                 return audio_segments[0], total_duration
             
